@@ -23,6 +23,8 @@ set -ouex pipefail
 
 systemctl enable podman.socket
 
-mkdir -p /nix && \
+mkdir /nix && \
 	curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix -o /nix/determinate-nix-installer.sh && \
 	chmod a+rx /nix/determinate-nix-installer.sh
+
+mkdir /code
