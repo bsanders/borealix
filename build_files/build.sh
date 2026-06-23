@@ -23,12 +23,12 @@ set -ouex pipefail
 
 systemctl enable podman.socket
 
-dnf5 -y install qt6-qtwebsockets-devel
+#dnf5 -y install qt6-qtwebsockets-devel
 
-mkdir /nix && \
-	curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix -o /nix/determinate-nix-installer.sh && \
-	chmod a+rx /nix/determinate-nix-installer.sh
+#mkdir /nix && \
+#	curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix -o /nix/determinate-nix-installer.sh && \
+#	chmod a+rx /nix/determinate-nix-installer.sh
+#
+#/nix/determinate-nix-installer.sh --no-confirm
 
-/nix/determinate-nix-installer.sh --no-confirm
-
-mkdir /code
+#mkdir /code
